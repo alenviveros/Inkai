@@ -1,0 +1,22 @@
+# Dependencies and builds
+node_modules/
+.next/
+.output/
+.nitro/
+.vercel/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# eve local runtime: sessions, sandbox files (customer uploads), traces
+.eve/
+
+# Secrets: never commit
+.env*
+
+# Local tool settings
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
