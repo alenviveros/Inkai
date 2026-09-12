@@ -5,7 +5,7 @@
 Built in one day for **Agents, Everywhere: Bots, Channels & More**, the AI Tinkerers global
 hackathon, from the Asunción venue.
 
-Demo video: _add link_
+**Demo video:** https://youtu.be/KzwhDTJMgxE
 
 ## The problem
 

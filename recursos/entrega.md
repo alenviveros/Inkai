@@ -1,6 +1,6 @@
 # Entrega — textos para el formulario del hackathon
 
-Listos para copiar y pegar, en inglés porque el jurado es global. Falta solo el link del video.
+Listos para copiar y pegar, en inglés porque el jurado es global.
 
 ---
 
@@ -53,7 +53,7 @@ and replaced it with Eve and the Vercel AI SDK before writing product code.
 ## Additional Links
 
 - GitHub repository: https://github.com/alenviveros/Inkai
-- Demo video: [completar]
+- Demo video: https://youtu.be/KzwhDTJMgxE
 
 ## Prior work
 
