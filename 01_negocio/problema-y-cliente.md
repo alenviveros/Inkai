@@ -1,7 +1,7 @@
-# Print.ai — problema, cliente, solución
+# Inkai — problema, cliente, solución
 
 ## Pitch en una frase
-**Print.ai convierte conversaciones desordenadas en trabajos de impresión listos para producir.**
+**Inkai convierte conversaciones desordenadas en trabajos de impresión listos para producir.**
 
 ## El problema
 En imprentas con mucho movimiento — Printos Super Impresiones es el caso real, ver
@@ -19,7 +19,7 @@ trabajo estructurada.
 
 > Cliente: "Quiero 50 de este diseño en A5, a color, para las 18."
 >
-> Print.ai genera:
+> Inkai genera:
 > ```
 > Pedido #104
 > 50 × impresión · Color · Archivo ✓ (PDF) · Entrega: 18:00

@@ -136,7 +136,7 @@ export function Cola({ inicial, errorInicial }: Props) {
             <Printer className="size-5" />
           </div>
           <div>
-            <h1 className="text-xl leading-tight font-semibold">Print.ai · Printos</h1>
+            <h1 className="text-xl leading-tight font-semibold">Inkai · Printos</h1>
             <p className="text-muted-foreground text-sm">La IA propone, una persona confirma.</p>
           </div>
         </div>

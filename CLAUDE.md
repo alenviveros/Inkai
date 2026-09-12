@@ -1,6 +1,6 @@
-# Print.ai — hackathon "Agents, Everywhere" (AI Tinkerers Asunción)
+# Inkai — hackathon "Agents, Everywhere" (AI Tinkerers Asunción)
 
-Somos Alen Martínez y Mauro Vera, equipo de 2. Construimos **Print.ai**: un agente que convierte
+Somos Alen Martínez y Mauro Vera, equipo de 2. Construimos **Inkai**: un agente que convierte
 conversaciones desordenadas (texto, voz, archivos) en órdenes de trabajo listas para producir, para
 imprentas con mucho movimiento. La IA propone; una persona confirma.
 Objetivo: entregar un demo filoso que funciona. Un demo que anda le gana a un concepto amplio.

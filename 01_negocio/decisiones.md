@@ -3,6 +3,13 @@
 > Una entrada por decisión. **Lo más nuevo arriba.** Una decisión no se borra: si cambia, se agrega
 > una nueva que la reemplaza y dice a cuál reemplaza.
 
+## 2026-09-12 — El producto se llama Inkai
+**Qué:** Print.ai pasa a llamarse **Inkai**: README, textos de entrega, mapas, panel, bot y el repo
+público (`github.com/alenviveros/Inkai`). Las entradas de abajo dicen Print.ai porque así se
+llamaba cuando se decidieron.
+**Por qué:** lo decidió Alen para el video y la entrega.
+**Reemplaza:** el nombre Print.ai.
+
 ## 2026-09-12 — Estado terminado y aviso al cliente con su número de pedido
 **Qué:** se aprueba el brief 005. El admin marca terminado un pedido de la cola, y el cliente que
 pidió por Telegram recibe un aviso con su número de pedido para retirarlo.

@@ -9,7 +9,7 @@ const sans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Print.ai · Panel de Printos",
+  title: "Inkai · Panel de Printos",
   description: "La cola de pedidos de Printos: la IA propone, una persona confirma.",
 };
 

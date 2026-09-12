@@ -1,4 +1,4 @@
-# Print.ai bot
+# Inkai bot
 
 The customer-facing agent: an [eve](https://eve.dev) agent on Telegram that turns a chat into a print
 order in Supabase. See the [root README](../../README.md) for the full picture.

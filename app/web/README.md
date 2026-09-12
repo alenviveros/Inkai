@@ -1,4 +1,4 @@
-# Print.ai admin panel
+# Inkai admin panel
 
 The print shop's live order board: Next.js 15, shadcn/ui and Supabase Realtime. See the
 [root README](../../README.md) for the full picture.

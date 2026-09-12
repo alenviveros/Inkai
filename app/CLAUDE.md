@@ -1,4 +1,4 @@
-# Print.ai — /app (el software)
+# Inkai — /app (el software)
 
 Este es el mapa del software. El negocio — por qué, para quién, qué se decidió — vive **arriba**,
 en `../01_negocio` y `../02_producto`. Acá solo se construye lo que un brief aprobado pide.
@@ -24,7 +24,7 @@ En este orden, cada paso cubierto por un brief aprobado:
    `printos.md` · tools `crear_pedido` / `actualizar_pedido` sobre `agent/lib/pedidos.ts`, que
    escriben en Supabase. La charla del demo del brief llega a pendiente de pago. `derivar` espera al
    brief 003 (borrador). Para hablarle: `npm run dev` en `bot/` abre el TUI; el servidor
-   `print-ai-bot` de `../.claude/launch.json` lo levanta sin TUI en el puerto 2000. El canal
+   `inkai-bot` de `../.claude/launch.json` lo levanta sin TUI en el puerto 2000. El canal
    Telegram es el brief 002.
 3. **`web/` — probado (2026-09-12):** Next 15.5 + shadcn `radix-nova`.
    `app/page.tsx` lee la cola y `components/cola.tsx` la mantiene en vivo con Realtime, en tres
@@ -33,7 +33,7 @@ En este orden, cada paso cubierto por un brief aprobado:
    `lib/pedidos.ts`, copia de las del bot. Typecheck, lint y build: OK. Probado en el
    navegador con el bot al lado: un pedido nuevo del bot aparece solo, Modificar cambia campos y
    rechaza papel incompatible, Confirmar lo pasa a la cola. Se levanta con el servidor
-   `print-ai-web` de `../.claude/launch.json` (puerto 3000). En `next dev`, Confirmar tardó unos
+   `inkai-web` de `../.claude/launch.json` (puerto 3000). En `next dev`, Confirmar tardó unos
    5 s: medirlo con `npm run build` + `npm start` antes de grabar.
 4. **Telegram (brief 002) — probado desde un celular (2026-09-12):** canal en
    `bot/agent/channels/telegram.ts`; el archivo del cliente se sube a Storage desde las tools y se

@@ -12,7 +12,7 @@ Un nombre por cosa. Si aparece un término nuevo, entra acá antes que en un bri
 - **Archivo** — lo que se imprime: PDF, imagen u otro imprimible. En el demo solo se registra si llegó y qué es.
 - **Entrega** — la modalidad (**retiro** en el local o **delivery**) y la fecha-hora en que lo necesita.
 
-## De Print.ai
+## De Inkai
 - **Tarjeta de pedido** — la vista estructurada que el agente propone: `Pedido #104 · 50 × A5 …`.
 - **Faltante** — un campo que el agente no pudo determinar. Se marca con ⚠️, nunca se inventa.
 - **Pendiente de pago** — tarjeta completa, esperando la transferencia. Todavía no está en la cola.

@@ -12,7 +12,7 @@ const RAIZ = "/workspace/attachments";
 
 // Workspace paths already attached to an order in this conversation.
 const adjuntosUsados = defineState(
-  "printai.adjuntos-usados",
+  "inkai.adjuntos-usados",
   (): { paths: string[] } => ({ paths: [] }),
 );
 

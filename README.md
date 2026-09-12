@@ -1,4 +1,4 @@
-# Print.ai
+# Inkai
 
 **Turns messy customer chats into print-ready work orders. The AI proposes; a person confirms.**
 
@@ -30,7 +30,7 @@ An agent that lives where the print shop's work already happens:
 
 ## Why the environment matters
 
-A standalone chatbot can only talk. Print.ai sits between two places that already exist, so the
+A standalone chatbot can only talk. Inkai sits between two places that already exist, so the
 conversation itself becomes the work order:
 
 - The customer never installs or opens anything new. They order in the chat they already use, and
@@ -137,4 +137,7 @@ language; code is in English.
 
 ## Team
 
-**Alen Martínez** and **Mauro Vera**, AI Tinkerers Asunción.
+- **Mauro Vera:** the problem, the print shop's operating flow and its business logic.
+- **Alen Martínez:** the technology stack and its implementation.
+
+AI Tinkerers Asunción.
