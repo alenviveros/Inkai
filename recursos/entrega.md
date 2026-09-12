@@ -10,39 +10,19 @@ Inkai
 
 ## Project description
 
-Inkai is an order-taking agent for busy print shops, built for Printos Super Impresiones, a real
-24-hour print shop in Asunción, Paraguay. It lives in the two places where print orders already
-happen: the customer's Telegram chat and the shop's live order board.
+Inkai is a working AI agent that takes print orders where they already happen: in the customer's Telegram chat and on the print shop's live order board. We built it for Printos Super Impresiones, a real 24-hour print shop in Asunción, Paraguay.
 
-The problem: orders arrive as messy conversations. The quantity comes in one message, the file in
-another, "for tomorrow" in a third. At peak hours staff retype every chat into a work order, chase
-the missing details and check by hand that the bank transfer arrived before printing. Orders get
-delayed, mixed up or lost.
+The problem. Print orders arrive as messy conversations: the quantity in one message, the file in another, "for tomorrow" in a third. At peak hours, staff retype every chat into a work order, chase missing details, and check by hand that the bank transfer arrived before printing. Orders get delayed, mixed up or lost.
 
-On Telegram, the customer writes the way they would talk to the counter and sends the PDF or photo
-in the same chat. The agent turns it into a structured order card with quantity, size, color, file,
-pickup or delivery and date. It marks every missing field instead of inventing a value, and asks
-only for what is missing. Each chat is a durable session, so the customer can answer an hour later
-and the agent still knows the order. The card appears live on the shop's board. There, the admin
-opens the customer's file, corrects the card in plain Spanish, confirms the transfer and marks the
-job finished, which sends the customer a Telegram message with the order number to pick it up.
+A functional agent in its environment. On Telegram, the customer writes naturally and sends the PDF or photo in the same chat. The agent turns the conversation into a structured order card with quantity, size, color, file, pickup or delivery, and date. It flags every missing field instead of inventing a value, and asks only for what is missing. The order appears instantly on the shop's board. The admin opens the customer's file, corrects the card in plain Spanish, confirms the transfer, and marks the job finished. At that moment the customer receives a Telegram message with the order number to pick it up. The whole loop runs end to end from a real phone.
 
-Why the environment matters: a standalone chatbot can only talk. Here the conversation becomes a row
-in the production queue with nobody retyping it, the file travels with the order, and the customer
-never installs or opens anything new. The environment also shapes the core workflow: the chat is
-where data is collected and the panel is where a person decides. Nothing reaches production until a
-human confirms the payment.
+Why this beats a standalone chatbot. A standalone chatbot can only answer. Inkai acts inside the shop's workflow: the conversation becomes a row in the production queue with nobody retyping it, the file travels with the order, and the customer never installs or opens anything new. The agent also closes the loop by writing back to the customer when the job is done.
 
-Technical execution: the agent is built with Eve, Vercel's durable agent framework, using its
-Telegram channel, typed tools and per-chat sessions, and runs Anthropic Claude Sonnet 5 through the
-Vercel AI SDK. Business rules are enforced in code, not only in the prompt: a closed catalog,
-required fields, paper and size compatibility, and guarded state transitions from draft to pending
-payment, production queue and finished. The admin panel is Next.js 15 with React 19, TypeScript,
-Tailwind CSS and shadcn/ui, updated live with Supabase Realtime. Supabase Postgres with row-level
-security is the only contract between the bot and the panel, and Supabase Storage keeps customer
-files in a private bucket opened through short-lived signed links. The "Modificar" action uses AI SDK
-structured output to turn the admin's correction into a validated field diff. For the demo, a
-Cloudflare Tunnel exposes the local bot to Telegram's webhook.
+Innovation, and how the environment shapes the workflow. Each place does what it is best at. The chat is where incomplete data is collected over time: every Telegram chat is a durable session, so a customer can answer a missing field an hour later and the agent still knows the order. The board is where a person decides: nothing reaches production until a human confirms the payment. The AI proposes and a person confirms; the agent never quotes prices or skips a step.
+
+Technical execution. The agent is built with Eve, Vercel's framework for durable agents, using its Telegram channel, typed tools, per-chat session state and inbound file handling. It runs Anthropic Claude Sonnet 5 through the Vercel AI SDK. Business rules are enforced in code, not only in the prompt: a closed catalog, required fields, paper and size compatibility, and a guarded state machine from draft to pending payment, production queue and finished. Customer files are recognized by their bytes and stored in a private Supabase Storage bucket, opened from the board through short-lived signed links. The admin panel uses Next.js 15 with the App Router and server actions, React 19, TypeScript, Tailwind CSS 4 and shadcn/ui on Radix, with Supabase Realtime keeping the board live. Supabase Postgres with row-level security is the only contract between the bot and the panel. The admin's natural-language corrections go through AI SDK structured output with Zod schemas and come back as a validated field diff. The order-ready notice uses the Telegram Bot API, and a Cloudflare Tunnel exposes the local bot to Telegram's webhook for the demo.
+
+Clear value and an intuitive experience. The customer just chats, the way they already talk to the counter, and always sees an order card that shows exactly what is confirmed and what is missing. The admin gets a board with a clear next action at each stage: open the file, fix the card in words, confirm payment, mark finished. No forms, no retyping, and no order lost between a chat and the production queue.
 
 ## Products & Tools Used
 
