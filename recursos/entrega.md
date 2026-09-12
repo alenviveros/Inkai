@@ -12,8 +12,7 @@ Inkai
 
 Inkai is an order-taking agent for busy print shops, built for Printos Super Impresiones, a real
 24-hour print shop in Asunción, Paraguay. It lives in the two places where print orders already
-happen: the customer's Telegram chat and the shop's live order board. The panel in the demo video
-still shows the project's working name, Print.ai.
+happen: the customer's Telegram chat and the shop's live order board.
 
 The problem: orders arrive as messy conversations. The quantity comes in one message, the file in
 another, "for tomorrow" in a third. At peak hours staff retype every chat into a work order, chase
